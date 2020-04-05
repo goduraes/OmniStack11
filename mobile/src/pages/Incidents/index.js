@@ -71,7 +71,7 @@ export default function Incidents() {
         onEndReachedThreshold={0.2}
         renderItem={({ item: incident }) => (
           <View style={styles.incident}>
-            <Text style={styles.incidentProperty}>ONG: {incident.id}</Text>
+            <Text style={styles.incidentProperty}>ONG: </Text>
             <Text style={styles.incidentValue}>{incident.name}</Text>
 
             <Text style={styles.incidentProperty}>CASO: </Text>

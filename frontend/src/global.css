@@ -44,7 +44,7 @@ button {
 form input {
   width: 100%;
   height: 60px;
-  color: #aaa;
+  color: var(--font-color);
   background: var(--inputBg-color);
   border: 0px solid #dcdce6;
   border-radius: 8px;
@@ -55,7 +55,7 @@ form textarea {
   width: 100%;
   resize: vertical;
   min-height: 140px;
-  color: #aaa;
+  color: var(--font-color);
   background: var(--inputBg-color);
   border: 0px solid #dcdce6;
   border-radius: 8px;
