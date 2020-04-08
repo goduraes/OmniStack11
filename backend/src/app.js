@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const { errors } = require('celebrate');
 const routes = require('./routes');
 
 const app = express();
@@ -19,8 +20,9 @@ app.use(cors());
 //função converte os retornos json em algo entendivel pela aplicação
 app.use(express.json());
 app.use(routes);
+app.use(errors());
 
-app.listen(3333);
+module.exports = app;
 
 /**
  * rota / recurso
